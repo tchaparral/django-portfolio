@@ -1,30 +1,6 @@
+{% extends 'partials/_base.html' %}
 {% load static %}
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Spering</title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
-
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
-</head>
+{% block content %}
 
 <body>
   <div class="hero_area">
@@ -35,7 +11,7 @@
           <a class="navbar-brand" href="index.html">
             <img src="{% static 'images/logo.png' %}" alt="" />
             <span>
-              Spering
+              Correali
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,18 +67,18 @@
     <!-- slider section -->
     <section class="slider_section ">
       <div class="carousel_btn-container">
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="sr-only">Next</span>
-        </a>
+        </a> -->
       </div>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li> --> 
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -111,20 +87,18 @@
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
                     <h1>
-                      You Can <br>
-                      Hire Freelancer <br>
-                      Here
+                      Thiago Correali <br>                      
                     </h1>
                     <p>
-                      It is a long established fact that a reader will be distracted by
-                      the readable content of a page
+                      Portfolio pessoal de aplicação web em Django. Front-end obtido em
+                      templates free, e readequado para o framework.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn-1">
-                        About Us
+                      <a href="#sobre" class="btn-1">
+                        Sobre Mim
                       </a>
-                      <a href="" class="btn-2">
-                        Get A Quote
+                      <a href="https://github.com/tchaparral/django-portfolio" class="btn-2" target="_blank">
+                        Codigo Fonte
                       </a>
                     </div>
                   </div>
@@ -137,7 +111,8 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item ">
+          <!-- itens de carrosel desativados -->
+          <!-- <div class="carousel-item ">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-5 offset-md-1">
@@ -201,7 +176,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -213,7 +188,7 @@
   <!-- experience section -->
 
   <section class="experience_section layout_padding">
-    <div class="container">
+    <div class="container" id="sobre">
       <div class="row">
         <div class="col-md-5">
           <div class="img-box">
@@ -520,7 +495,7 @@
       <div class="container">
         <div class="info_top">
           <div class="info_logo">
-            <img src="images/logo.png" alt="" />
+            <img src="{% static 'images/logo.png' %}" alt="" />
             <span>
               Spering
             </span>
@@ -650,25 +625,4 @@
   </section>
 
   <!-- end info section -->
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section ">
-    <div class="container">
-      <p>
-        &copy; <span id="displayDate"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </footer>
-  <!-- end  footer section -->
-
-
-  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.js' %}"></script>
-  <script src="{% static 'js/custom.js' %}"></script>
-
-
-</body>
-</body>
-
-</html>
+{% endblock %}

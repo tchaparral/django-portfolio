@@ -1,0 +1,8 @@
+- Ajustar rolagem smooth
+- Criar funcinoalidade:
+    - cadastro
+    - login
+    - cadastro de itens
+    - lojinha
+    - envio de e-mail automatico
+    
