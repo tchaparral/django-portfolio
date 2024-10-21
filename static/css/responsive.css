@@ -18,7 +18,7 @@
 
 
   .header_section .user_option {
-    display: none;
+    display: none;    
   }
 
   .custom_menu-btn {
@@ -188,4 +188,8 @@
   .container {
     max-width: 1170px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

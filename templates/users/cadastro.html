@@ -1,0 +1,79 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+
+{% block content %}
+<body class="sub_page">
+    <div class="hero_area" id="top">
+        <!-- header section strats -->
+        {% include 'partials/_header.html' %}
+        <!-- end header section -->
+    </div>
+
+    <!--- cadastro section starts -->
+    <section class="cadastro_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-10 mx-auto">
+                    <div class="heading_container">
+                        <h2>
+                        Cadastro
+                        </h2>
+                    </div>  
+                    <div class="custom_form detail-box">
+                        <form action="{% url 'cadastro' %}" method="POST">
+                        {% csrf_token %}
+                            <div class='row'>
+                                <div class="col">
+                                    {{form.nome.label_tag}}
+                                    {{form.nome}}
+                                </div>
+                                <div class="col">
+                                    {{form.sobrenome.label_tag}}
+                                    {{form.sobrenome}}
+                                </div>
+                            </div>     
+                            <div class='row'>
+                                <div class="col">
+                                    {{form.nome_usuario.label_tag}}
+                                    {{form.nome_usuario}}
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class="col">
+                                    {{form.email.label_tag}}
+                                    {{form.email}}
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class="col">
+                                    {{form.senha.label_tag}}
+                                    {{form.senha}}
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class="col">
+                                    {{form.senha_confirm.label_tag}}
+                                    {{form.senha_confirm}}
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">                                                      
+                                    <span>
+                                        Eu concordo com todos is itens do <a href="#!" class="text-body"><u>Termos de serviço</u></a>
+                                        {{form.check_termos}}
+                                    </span>                                                         
+                            </div>            
+                            <div class="d-flex justify-content-center">
+                                <button type="submit">
+                                    Cadastrar
+                                </button>
+                            </div>            
+                            <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? 
+                            <a href="{% url 'login' %}" class="fw-bold text-body"><u>Login</u></a></p>            
+                        </form>
+                    </div>                  
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- end cadastro section -->
+{% endblock %}

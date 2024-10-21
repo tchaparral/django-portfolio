@@ -1,0 +1,153 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+
+{% block content %}
+<body class="sub_page">
+  <div class="hero_area" id="top">
+    <!-- header section strats -->
+    {% include 'partials/_header.html' %}
+    <!-- end header section -->
+  </div>
+
+    <!--- politica section starts -->
+    <section class="client_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-10 mx-auto">
+                    <div class="heading_container">
+                        <h2>
+                        Política de Privacidade
+                        </h2>
+                    </div>           
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <p>
+                                Nós, estamos comprometidos em proteger a sua privacidade. Esta Política de 
+                                Privacidade descreve como coletamos, usamos e protegemos suas 
+                                informações pessoais quando você utiliza nosso site.
+                                </p>
+                            </div>
+                        </div>               
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Coleta de Informações
+                                </h4>
+                                <p>
+                                Coletamos informações quando você visita nosso site, preenche formulários 
+                                ou interage com nossas funcionalidades. As informações coletadas podem 
+                                incluir, mas não estão limitadas a, nome, e-mail e outros dados de contato.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Uso das Informações
+                                </h4>
+                                <p>
+                                As informações que coletamos podem ser usadas para:<br><br>
+                                Melhorar o atendimento ao cliente.<br>
+                                Enviar e-mails periódicos sobre atualizações ou informações relacionadas ao seu projeto.<br>
+                                Responder às suas solicitações e dúvidas.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Proteção das Informações
+                                </h4>
+                                <p>
+                                Implementamos uma variedade de medidas de segurança para 
+                                manter a segurança de suas informações pessoais. No entanto, 
+                                lembre-se de que nenhum método de transmissão pela Internet ou 
+                                método de armazenamento eletrônico é 100% seguro.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Compartilhamento de Informações
+                                </h4>
+                                <p>
+                                Nós não vendemos, trocamos ou de qualquer outra forma transferimos suas 
+                                informações pessoais para terceiros, exceto quando necessário para 
+                                cumprir a lei ou proteger nossos direitos.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Cookies
+                                </h4>
+                                <p>
+                                Nosso site pode utilizar "cookies" para melhorar a 
+                                experiência do usuário. Você pode optar por desativar os 
+                                cookies através das configurações do seu navegador.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Alterações nesta Política
+                                </h4>
+                                <p>
+                                Reservamo-nos o direito de atualizar esta Política de Privacidade a 
+                                qualquer momento. Recomendamos que você revise esta página 
+                                periodicamente para se manter informado sobre como estamos 
+                                protegendo suas informações.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <h4>
+                                Contato
+                                </h4>
+                                <p>
+                                Se você tiver dúvidas sobre esta Política de Privacidade, 
+                                entre em contato conosco através do e-mail: correali@gmail.com.
+                                </p>
+                            </div>
+                        </div>                              
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="detail-box">
+                                <p>                                
+                                    <div class="custom_form">
+                                        <form action="{% url 'index' %}">                                                                                
+                                            <button>
+                                            <h5>Voltar</h5>
+                                            </button>                                
+                                        </form>
+                                    </div>                                 
+                                </p>      
+                            </div>
+                        </div>                              
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- end politica section -->
+{% endblock %}

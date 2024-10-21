@@ -1,0 +1,63 @@
+{% extends 'partials/_base.html' %}
+{% load static %}
+
+{% block content %}
+<body class="sub_page">
+  <div class="hero_area" id="top">
+    <!-- header section strats -->
+    {% include 'partials/_header.html' %}
+    <!-- end header section -->
+  </div>
+
+  <!-- toast section -->
+
+  <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- end toast section-->
+
+  <!-- login section -->
+
+  <section class="freelance_section layout_padding">
+    <div id="accordion">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-1">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Área de Login
+                </h2>
+              </div>
+              <div class="tab_container custom_form">
+                <form action="{% url 'login' %}" method="POST">
+                  {% csrf_token %}
+                  {{ form }}
+                  <div class="mb-3 form-check">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="img-box">
+                <img src="{% static 'images/freelance-img.jpg' %}" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end login section -->
+{% endblock %}

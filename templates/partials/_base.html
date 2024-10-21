@@ -26,8 +26,8 @@
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 </head>
 
-<body>
-    {% block content %}{% endblock %}
+    {% block content %}{% endblock %}    
+    {% include 'partials/_info.html' %}
     {% include 'partials/_footer.html' %}
 </body>
 <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>

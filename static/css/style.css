@@ -92,7 +92,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #ffffff;
+  color: #ffffff;  
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -633,6 +633,63 @@ a:focus {
   background-image: url(../images/next-angle.png);
 }
 
+/* cadastro section */
+
+.cadastro_section .heading_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cadastro_section .detail-box {
+  text-align: center;
+  margin: 25px 35px;
+  padding: 45px 65px 35px 65px;
+  -webkit-box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cadastro_section .detail-box h4 {
+  font-weight: bold;
+}
+
+.cadastro_section .detail-box p {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.cadastro_section .cadastro_form form input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+  margin-bottom: 25px;
+}
+
+.cadastro_section .cadastro_form form button {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #ff4f5a;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border: 1.5px solid #ffffff;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.cadastro_section .cadastro_form form button:hover {
+  background-color: transparent;
+  border-color: #ff4f5a;
+  color: #ff4f5a;
+}
+
+/* end of cadastro section */
+
 /* info section */
 .info_section {
   position: relative;
@@ -876,3 +933,4 @@ a:focus {
           transform: rotate(-45deg) translate(8px, -8px);
 }
 /*# sourceMappingURL=style.css.map */
+

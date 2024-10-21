@@ -1,0 +1,138 @@
+{% load static %}
+<!-- info section starts -->
+<section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'images/logo.png' %}" alt="" />
+                <span>
+                  Correali
+                </span>
+              </a>
+          </div>
+          <div class="social_box">
+            <a href="#">
+              <img src="{% static 'images/fb.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'images/twitter.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'images/linkedin.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'images/instagram.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'images/youtube.png' %}" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-2 text-center">
+              <div class="info_link-box">
+                <h5>
+                  Navegação
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="{% url 'index' %}">Home</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#sobre">Sobre Mim</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="work.html">Work </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="{% url 'politica' %}">Políticas de Privacidade</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 text-center">
+              <h5>
+                Disclaimer
+              </h5>
+              <p>
+                Este site é um projeto de portfólio. Todas as funcionalidades foram desenvolvidas 
+                para fins demonstrativos e educacionais, sem qualquer objetivo comercial ou de venda.
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 offset-lg-1 text-center">
+              <h5>
+                Localização
+              </h5>
+              <p>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="#" class="link-box">
+                            <div class="img-box">
+                                <img src="{% static 'images/location.png' %}" alt="">                        
+                            </div>
+                        </a>
+                    </div>               
+                </div>
+                </p>
+                <h5>
+                E-mail
+                </h5>
+                <p>
+                <div class="row">
+                    <div class="col-md-12 text-center">                        
+                        <a href="#" class="link-box">
+                            <div class="img-box">
+                                <img src="{% static 'images/mail.png' %}" alt="">                        
+                            </div>
+                        </a>
+                    </div>               
+                </div>
+              </p>
+            </div>
+
+            <div class="col-md-3  offset-lg-1">
+              <div class="info_form">
+                <h5>
+                  Contato
+                </h5>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                        
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Mensagem</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem..."></textarea>
+                    </div>
+                    <button>
+                    Enviar
+                    </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-md-10 mx-auto">
+                <div class="info_contact layout_padding2">                             
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
